@@ -5,9 +5,9 @@ package com.baiyi.design.principle.singleresponsibility;
  * @description: 单例模式
  * @date: 2021/9/17 20:52
  */
-public class SingleResponsibility {
+public class SingleResponsibility3 {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle();
+        Vehicle2 vehicle = new Vehicle2();
         vehicle.run("摩托车");
         vehicle.AirRun("飞机");
         vehicle.WaterRun("轮船");
@@ -15,9 +15,11 @@ public class SingleResponsibility {
 }
 
 /**
+ * 方案三
+ * 这里修改的代码相对少, 只是在类中添加相关方法
  * 这里虽然没有在类的级别做到单一职责, 但是在方法上仍然做到了单一职责
  */
-class Vehicle {
+class Vehicle2 {
     public void run(String vehicle) {
         System.out.println(vehicle + "在公路上跑....");
     }
