@@ -2,7 +2,7 @@ package com.baiyi.design.principle.segregation.improve;
 
 /**
  * @author: BaiYi
- * @description: 使用接口隔离原则反例
+ * @description: 使用接口隔离原则
  * 1. 类 A通过 Interface1 依赖使用类 B
  * 2. 但类 A 只会使用Interface1 的 1、2、3 方法
  * 3. 类 C通过 Interface1 依赖使用类 D
