@@ -25,7 +25,7 @@ public class RectangleDemo {
     }
 
     public static void resize(Rectangle rectangle) {
-        while (rectangle.getWidth() < rectangle.getLength()) {
+        while (rectangle.getWidth() <= rectangle.getLength()) {
             rectangle.setWidth(rectangle.getWidth() + 1);
         }
     }
